@@ -5,6 +5,8 @@ const posts = require('./routes/api/posts');
 
 const app = express();
 
+app.use(express.json());
+
 app.use('/api/comments', comments);
 app.use('/api/posts', posts);
 
